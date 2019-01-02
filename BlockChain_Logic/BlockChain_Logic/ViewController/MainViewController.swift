@@ -90,7 +90,7 @@ class MainViewController: UIViewController {
         if userOneTextField.text == "" {
             present(invalidAlert, animated: true, completion: nil)
         } else {
-            transaction(from: "\(firstAccount)", to: "\(secondAccount)", amount: Int(userOneTextField.text!)!, type: "normal")
+            transaction(from: "\(firstAccount)", to: "\(secondAccount)", amount: Int(userOneTextField.text ?? "")!, type: "normal")
             print("\(userOneTextField.text!) BTC sent from \(firstAccount) to \(secondAccount)")
             chainState()
             userOneTextField.text = ""
@@ -108,7 +108,7 @@ class MainViewController: UIViewController {
         if userTwoTextField.text == "" {
             present(invalidAlert, animated: true, completion: nil)
         } else {
-            transaction(from: "\(secondAccount)", to: "\(firstAccount)", amount: Int(userTwoTextField.text!)!, type: "normal")
+            transaction(from: "\(secondAccount)", to: "\(firstAccount)", amount: Int(userTwoTextField.text ?? "")!, type: "normal")
             print("\(userTwoTextField.text!) BTC sent from \(secondAccount) to \(firstAccount)")
             chainState()
             userTwoTextField.text = ""
