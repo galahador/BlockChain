@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WL9-Dh-lvM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!-- Wallet-->
+        <scene sceneID="a9m-kT-xC1">
+            <objects>
+                <viewController id="mi3-pU-jpn" customClass="MainViewController" customModule="BlockChain_Logic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t6R-4V-wTj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeG-IM-X8z">
+                                <rect key="frame" x="16" y="72" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.81062704320000001" green="0.21943971509999999" blue="0.21108013389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouf-jt-wQ4">
+                                <rect key="frame" x="16" y="448.5" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.1177216843" green="0.38684132700000001" blue="0.93562549350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account: 1065" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Px-MY-AwR">
+                                <rect key="frame" x="16" y="112" width="109.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account: 0217" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPY-Vy-CzM">
+                                <rect key="frame" x="16" y="488.5" width="108.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance: 5000 BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-i1-QoX">
+                                <rect key="frame" x="213" y="112" width="146" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance: 0 BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ0-sQ-v6M">
+                                <rect key="frame" x="243.5" y="488.5" width="115.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uk4-cO-SMi">
+                                <rect key="frame" x="82" y="148.5" width="211" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coins to send" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAg-e4-4tF">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="211" id="4Ng-In-MGQ"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sZM-SB-Fd2">
+                                <rect key="frame" x="82" y="525" width="211" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coins to send" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Xi-Sz-wYy">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="211" id="uga-hC-2xI"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="q0E-T1-vcI">
+                                <rect key="frame" x="87" y="194.5" width="201" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1u-I2-nTM" customClass="CustomButton" customModule="Blockchain_Starter_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.81062704320000001" green="0.21943971509999999" blue="0.21108013389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Pdq-pN-vHb"/>
+                                            <constraint firstAttribute="height" constant="80" id="j3s-Xh-5pz"/>
+                                        </constraints>
+                                        <state key="normal" title="Mine">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNP-Wd-FtL" customClass="CustomButton" customModule="Blockchain_Starter_Project" customModuleProvider="target">
+                                        <rect key="frame" x="121" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.81062704320000001" green="0.21943971509999999" blue="0.21108013389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="8G4-gr-Wh6"/>
+                                            <constraint firstAttribute="height" constant="80" id="Vtk-41-oxl"/>
+                                        </constraints>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="bQz-60-beL">
+                                <rect key="frame" x="87" y="571" width="201" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFj-56-tFM" customClass="CustomButton" customModule="Blockchain_Starter_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.1177216843" green="0.38684132700000001" blue="0.93562549350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="5GD-3U-wDs"/>
+                                            <constraint firstAttribute="height" constant="80" id="ZmE-zs-pro"/>
+                                        </constraints>
+                                        <state key="normal" title="Mine">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTg-P6-2PM" customClass="CustomButton" customModule="Blockchain_Starter_Project" customModuleProvider="target">
+                                        <rect key="frame" x="121" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.1177216843" green="0.38684132700000001" blue="0.93562549350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="6dr-Mj-B5E"/>
+                                            <constraint firstAttribute="width" constant="80" id="aM6-V9-qhF"/>
+                                        </constraints>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sZM-SB-Fd2" firstAttribute="centerX" secondItem="t6R-4V-wTj" secondAttribute="centerX" id="2nb-w6-UFD"/>
+                            <constraint firstItem="HLJ-f2-hap" firstAttribute="trailing" secondItem="nZ0-sQ-v6M" secondAttribute="trailing" constant="16" id="4oF-Zi-quw"/>
+                            <constraint firstItem="6Px-MY-AwR" firstAttribute="leading" secondItem="HLJ-f2-hap" secondAttribute="leading" constant="16" id="96R-S4-mx3"/>
+                            <constraint firstItem="qPY-Vy-CzM" firstAttribute="top" secondItem="ouf-jt-wQ4" secondAttribute="bottom" constant="4" id="AKA-ZH-tKn"/>
+                            <constraint firstItem="q0E-T1-vcI" firstAttribute="centerX" secondItem="t6R-4V-wTj" secondAttribute="centerX" id="BLC-AE-Hdm"/>
+                            <constraint firstItem="ouf-jt-wQ4" firstAttribute="leading" secondItem="HLJ-f2-hap" secondAttribute="leading" constant="16" id="FjQ-d9-037"/>
+                            <constraint firstItem="YeG-IM-X8z" firstAttribute="top" secondItem="HLJ-f2-hap" secondAttribute="top" constant="8" id="Ms6-Ig-LCk"/>
+                            <constraint firstItem="HLJ-f2-hap" firstAttribute="trailing" secondItem="YeG-IM-X8z" secondAttribute="trailing" constant="16" id="OH8-Gv-gOS"/>
+                            <constraint firstItem="bQz-60-beL" firstAttribute="top" secondItem="sZM-SB-Fd2" secondAttribute="bottom" constant="16" id="Ojj-LX-Mci"/>
+                            <constraint firstItem="HLJ-f2-hap" firstAttribute="trailing" secondItem="ouf-jt-wQ4" secondAttribute="trailing" constant="16" id="ThI-wV-Kh8"/>
+                            <constraint firstItem="sZM-SB-Fd2" firstAttribute="top" secondItem="qPY-Vy-CzM" secondAttribute="bottom" constant="16" id="TmF-K4-jfY"/>
+                            <constraint firstItem="ouf-jt-wQ4" firstAttribute="centerX" secondItem="t6R-4V-wTj" secondAttribute="centerX" id="Tyw-We-Huc"/>
+                            <constraint firstItem="bQz-60-beL" firstAttribute="centerX" secondItem="t6R-4V-wTj" secondAttribute="centerX" id="bTS-0x-eQz"/>
+                            <constraint firstItem="HLJ-f2-hap" firstAttribute="trailing" secondItem="4fB-i1-QoX" secondAttribute="trailing" constant="16" id="cdF-NH-QVa"/>
+                            <constraint firstItem="4fB-i1-QoX" firstAttribute="top" secondItem="YeG-IM-X8z" secondAttribute="bottom" constant="4" id="clH-7o-r8q"/>
+                            <constraint firstItem="YeG-IM-X8z" firstAttribute="leading" secondItem="HLJ-f2-hap" secondAttribute="leading" constant="16" id="kLi-iD-XHQ"/>
+                            <constraint firstItem="HLJ-f2-hap" firstAttribute="bottom" secondItem="bQz-60-beL" secondAttribute="bottom" constant="16" id="lgw-Uy-DFN"/>
+                            <constraint firstItem="Uk4-cO-SMi" firstAttribute="top" secondItem="6Px-MY-AwR" secondAttribute="bottom" constant="16" id="pUJ-Lx-KpB"/>
+                            <constraint firstItem="qPY-Vy-CzM" firstAttribute="leading" secondItem="HLJ-f2-hap" secondAttribute="leading" constant="16" id="pbn-co-9VV"/>
+                            <constraint firstItem="sZM-SB-Fd2" firstAttribute="top" secondItem="nZ0-sQ-v6M" secondAttribute="bottom" constant="16" id="pw2-tl-ESe"/>
+                            <constraint firstItem="q0E-T1-vcI" firstAttribute="top" secondItem="Uk4-cO-SMi" secondAttribute="bottom" constant="16" id="py4-iH-ZRb"/>
+                            <constraint firstItem="6Px-MY-AwR" firstAttribute="top" secondItem="YeG-IM-X8z" secondAttribute="bottom" constant="4" id="ssS-T2-Dbr"/>
+                            <constraint firstItem="Uk4-cO-SMi" firstAttribute="centerX" secondItem="t6R-4V-wTj" secondAttribute="centerX" id="uuD-9a-SZ7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HLJ-f2-hap"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" Wallet" id="KXR-Jx-yZB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AXR-TM-ILx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018.4000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ojr-Pc-xFG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WL9-Dh-lvM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oxl-Y6-dj9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mi3-pU-jpn" kind="relationship" relationship="rootViewController" id="wTF-l6-puP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywS-Dr-Yz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
