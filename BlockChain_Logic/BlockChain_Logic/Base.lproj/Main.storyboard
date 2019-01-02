@@ -103,6 +103,9 @@
                                                 <real key="value" value="0.29999999999999999"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="userOneMineButtonTapped:" destination="mi3-pU-jpn" eventType="touchUpInside" id="BR0-54-obp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNP-Wd-FtL" customClass="CustomButton" customModule="Blockchain_Starter_Project" customModuleProvider="target">
                                         <rect key="frame" x="121" y="0.0" width="80" height="80"/>
@@ -122,6 +125,9 @@
                                                 <real key="value" value="0.29999999999999999"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="userOneSendButtonTapped:" destination="mi3-pU-jpn" eventType="touchUpInside" id="8T6-fj-tlx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -146,6 +152,9 @@
                                                 <real key="value" value="0.29999999999999999"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="userTwoMineButtonTapped:" destination="mi3-pU-jpn" eventType="touchUpInside" id="6EA-70-04j"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTg-P6-2PM" customClass="CustomButton" customModule="Blockchain_Starter_Project" customModuleProvider="target">
                                         <rect key="frame" x="121" y="0.0" width="80" height="80"/>
@@ -165,6 +174,9 @@
                                                 <real key="value" value="0.29999999999999999"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="userTwoSendButtonTapped:" destination="mi3-pU-jpn" eventType="touchUpInside" id="bmf-it-cvk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -198,6 +210,12 @@
                         <viewLayoutGuide key="safeArea" id="HLJ-f2-hap"/>
                     </view>
                     <navigationItem key="navigationItem" title=" Wallet" id="KXR-Jx-yZB"/>
+                    <connections>
+                        <outlet property="userOneLabel" destination="4fB-i1-QoX" id="QZF-Nr-t8I"/>
+                        <outlet property="userOneTextField" destination="xAg-e4-4tF" id="kI7-9i-LT3"/>
+                        <outlet property="userTwoLabel" destination="nZ0-sQ-v6M" id="8L9-dh-FlA"/>
+                        <outlet property="userTwoTextField" destination="8Xi-Sz-wYy" id="jtI-7N-eLn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXR-TM-ILx" sceneMemberID="firstResponder"/>
             </objects>
