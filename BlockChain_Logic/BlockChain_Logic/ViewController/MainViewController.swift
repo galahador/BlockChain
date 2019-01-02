@@ -78,15 +78,15 @@ class MainViewController: UIViewController {
         }
         return "Chain is valid: \(isChainValid)\n"
     }
-
-    //Wallet one Action
-    @IBAction func userOneMineButtonTapped(_ sender: Any) {
+    
+    // Wallet one Sending and mine logic
+    fileprivate func walletOneMineLogic() {
         transaction(from: "0000", to: "\(firstAccount)", amount: 100, type: "normal")
         print("New block mined by: \(firstAccount)")
         chainState()
     }
 
-    @IBAction func userOneSendButtonTapped(_ sender: Any) {
+    fileprivate func walletOneSendingLogic() {
         if userOneTextField.text == "" {
             present(invalidAlert, animated: true, completion: nil)
         } else {
@@ -97,14 +97,14 @@ class MainViewController: UIViewController {
         }
     }
 
-    //Wallet 2 Action
-    @IBAction func userTwoMineButtonTapped(_ sender: Any) {
+    // Wallet two sending and mine logic
+    fileprivate func walletTwoMineLogic() {
         transaction(from: "0000", to: "\(secondAccount)", amount: 100, type: "normal")
         print("New block mined by: \(secondAccount)")
         chainState()
     }
 
-    @IBAction func userTwoSendButtonTapped(_ sender: Any) {
+    fileprivate func walletTwoSendingLogic() {
         if userTwoTextField.text == "" {
             present(invalidAlert, animated: true, completion: nil)
         } else {
@@ -113,6 +113,25 @@ class MainViewController: UIViewController {
             chainState()
             userTwoTextField.text = ""
         }
+    }
+
+
+    //Wallet one Action
+    @IBAction func userOneMineButtonTapped(_ sender: Any) {
+        walletOneMineLogic()
+    }
+
+    @IBAction func userOneSendButtonTapped(_ sender: Any) {
+        walletOneSendingLogic()
+    }
+
+    //Wallet 2 Action
+    @IBAction func userTwoMineButtonTapped(_ sender: Any) {
+        walletTwoMineLogic()
+    }
+
+    @IBAction func userTwoSendButtonTapped(_ sender: Any) {
+        walletTwoSendingLogic()
     }
 }
 
