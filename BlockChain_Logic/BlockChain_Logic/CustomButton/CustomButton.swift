@@ -36,3 +36,7 @@ class CustomButton: UIButton {
         }
     }
 }
+
+/*
+ This is main test for conflict!
+ */
