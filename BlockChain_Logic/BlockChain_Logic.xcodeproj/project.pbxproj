@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		6005716621DD4698001D73A5 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6005716521DD4698001D73A5 /* Block.swift */; };
 		6005716821DD46BC001D73A5 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6005716721DD46BC001D73A5 /* Blockchain.swift */; };
 		6005716A21DD473C001D73A5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6005716921DD473C001D73A5 /* CustomButton.swift */; };
+		601DC2CA23F1F2E9002C4C76 /* GitTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DC2C923F1F2E9002C4C76 /* GitTestFile.swift */; };
 		60EC05F721DD45BA006AFE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC05F621DD45BA006AFE45 /* AppDelegate.swift */; };
 		60EC05F921DD45BA006AFE45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC05F821DD45BA006AFE45 /* MainViewController.swift */; };
 		60EC05FC21DD45BA006AFE45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EC05FA21DD45BA006AFE45 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		6005716521DD4698001D73A5 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		6005716721DD46BC001D73A5 /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
 		6005716921DD473C001D73A5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		601DC2C923F1F2E9002C4C76 /* GitTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTestFile.swift; sourceTree = "<group>"; };
 		60EC05F321DD45BA006AFE45 /* BlockChain_Logic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockChain_Logic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EC05F621DD45BA006AFE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60EC05F821DD45BA006AFE45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				60EC060221DD45BA006AFE45 /* LaunchScreen.storyboard */,
 				60EC060521DD45BA006AFE45 /* Info.plist */,
 				60EC05FD21DD45BA006AFE45 /* BlockChain_Logic.xcdatamodeld */,
+				601DC2C923F1F2E9002C4C76 /* GitTestFile.swift */,
 			);
 			path = BlockChain_Logic;
 			sourceTree = "<group>";
@@ -199,20 +202,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BlockChain_Logic/Pods-BlockChain_Logic-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-BlockChain_Logic/Pods-BlockChain_Logic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-BlockChain_Logic/Pods-BlockChain_Logic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockChain_Logic/Pods-BlockChain_Logic-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlockChain_Logic/Pods-BlockChain_Logic-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D688967698AD1F9380D1CB55 /* [CP] Check Pods Manifest.lock */ = {
@@ -245,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60EC05F921DD45BA006AFE45 /* MainViewController.swift in Sources */,
+				601DC2CA23F1F2E9002C4C76 /* GitTestFile.swift in Sources */,
 				6005716621DD4698001D73A5 /* Block.swift in Sources */,
 				6005716A21DD473C001D73A5 /* CustomButton.swift in Sources */,
 				60EC05F721DD45BA006AFE45 /* AppDelegate.swift in Sources */,
